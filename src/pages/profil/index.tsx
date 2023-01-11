@@ -5,6 +5,7 @@ import { FooterCentered } from '../../components/common/Footerwebsite';
 import { UserCardImage } from '../../components/UserCardImage';
 import { StringForAppFr } from '../../assets/utils/lang/StringForAppFr';
 import BannerImageProfile from '../../assets/images/Bannerprofilimg.png';
+import { ContactMe } from '../../components/common/ContactMe';
 
 export default function Profile() {
   // const { classes } = useStyles();
@@ -49,6 +50,7 @@ export default function Profile() {
               },
             ]}
         />
+        <ContactMe />
       </Container>
       <FooterCentered
         links={[

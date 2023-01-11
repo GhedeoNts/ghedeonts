@@ -172,7 +172,6 @@ export function UserCardImage({ image, avatar, name, job, stats }: UserCardImage
       <MySkills />
       <TimeLine />
       <SectionProjects />
-      <ContactMe />
     </Card>
   );
 }
