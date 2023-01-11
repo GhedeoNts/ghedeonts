@@ -5,6 +5,7 @@ import { IconBrandLinkedin, IconBrandGithub, IconBrandTwitter, IconBrandDiscord,
 import image from '../../assets/images/photo-de-profil-min.svg';
 import { StringForAppFr } from '../../assets/utils/lang/StringForAppFr';
 import { useStyles } from './styles';
+import QrCodeCv from '../../assets/images/qr-code-de-cv-de-candidature.png';
 
 export function CardAboutMe() {
     const { classes } = useStyles();
@@ -15,11 +16,11 @@ export function CardAboutMe() {
                     <Title className={classes.title}>{StringForAppFr.Profile.identity.firstName}
                         &nbsp;{StringForAppFr.Profile.identity.name}
                     </Title>
-                    <Text weight={500} size="lg" mb={5}>
+                    {/* <Text weight={500} size="lg" mb={5}>
                         <Text align="justify" color="dimmed" mt="md">
                             {StringForAppFr.Profile.shortdescription}
                         </Text>
-                    </Text>
+                    </Text> */}
 
                     <div className={classes.controls}>
 
@@ -79,6 +80,15 @@ export function CardAboutMe() {
                                 <IconBrandDiscord size={18} stroke={1.5} />
                             </ActionIcon>
                         </Group>
+                    </div>
+                    <div>
+                        <Image
+                    width={180}
+                    height={180}
+                    src={QrCodeCv.src}
+                    className={classes.imgStyle}
+                    caption="Scanner-Moi&nbsp;&nbsp;<CV📃/>"
+                        />
                     </div>
                 </div>
                 <Image src={image.src} className={classes.image} />

@@ -54,4 +54,8 @@ export const useStyles = createStyles((theme) => ({
         borderTopLeftRadius: 0,
         borderBottomLeftRadius: 0,
     },
+    imgStyle: {
+        paddingTop: 20,
+         alignItems: 'center',
+    },
 }));
