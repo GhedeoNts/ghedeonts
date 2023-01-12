@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import { Title, Text, Button, Container, Group, Anchor } from '@mantine/core';
 import { useStyles } from './styles';
-import { Illustration } from '../Illustration';
 
 export function ComponentPageNotFound():JSX.Element {
   const { classes } = useStyles();
